@@ -6,7 +6,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  static const customSwatch = Color.fromARGB(255, 61, 16, 239);
+  static const color = Color.fromARGB(255, 83, 55, 194);
 
   const MyApp({Key? key}) : super(key: key);
 
@@ -33,17 +33,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Permission Handler"),
+        title: const Text("Permission Handler"),centerTitle: true,
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(100.0),
           child: Column(
             children: [
               ElevatedButton(
                 onPressed: requestCameraPermission,
                 child: const Text(
-                  "Request Camera Permission",
+                  "Request Camera Permissions",
                   style: TextStyle(
                     fontSize: 16,
                   ),
